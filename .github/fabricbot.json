@@ -1,0 +1,36 @@
+[
+  {
+    "taskType": "trigger",
+    "capabilityId": "IssueResponder",
+    "subCapability": "IssuesOnlyResponder",
+    "version": "1.0",
+    "config": {
+      "conditions": {
+        "operator": "and",
+        "operands": [
+          {
+            "name": "labelAdded",
+            "parameters": {
+              "label": "Dotnet"
+            }
+          }
+        ]
+      },
+      "eventType": "issue",
+      "eventNames": [
+        "issues",
+        "project_card"
+      ],
+      "actions": [
+        {
+          "name": "assignToUser",
+          "parameters": {
+            "groupId": "",
+            "user": "JamieMagee"
+          }
+        }
+      ],
+      "taskName": "Assign to .NET experts"
+    }
+  }
+]
