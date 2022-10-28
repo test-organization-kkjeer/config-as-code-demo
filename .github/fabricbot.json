@@ -11,19 +11,6 @@
           "operator": "and",
           "operands": [
             {
-              "name": "isOpen",
-              "parameters": {}
-            },
-            {
-              "operator": "not",
-              "operands": [
-                {
-                  "name": "isPartOfProject",
-                  "parameters": {}
-                }
-              ]
-            },
-            {
               "name": "hasLabel",
               "parameters": {
                 "label": "Dotnet"
@@ -38,16 +25,9 @@
         ],
         "actions": [
           {
-            "name": "assignToUser",
-            "parameters": {
-              "groupId": "",
-              "user": "astatide"
-            }
-          },
-          {
             "name": "addReply",
             "parameters": {
-              "comment": "WHEHEEEEEE!"
+              "comment": "What if instead of assigning, we just reply?"
             }
           }
         ],
