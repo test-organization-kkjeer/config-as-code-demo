@@ -11,10 +11,8 @@
           "operator": "and",
           "operands": [
             {
-              "name": "labelAdded",
-              "parameters": {
-                "label": "Dotnet"
-              }
+              "name": "isOpen",
+              "parameters": {}
             },
             {
               "operator": "not",
@@ -24,6 +22,12 @@
                   "parameters": {}
                 }
               ]
+            },
+            {
+              "name": "hasLabel",
+              "parameters": {
+                "label": "Dotnet"
+              }
             }
           ]
         },
