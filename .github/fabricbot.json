@@ -11,7 +11,7 @@
           "operator": "and",
           "operands": [
             {
-              "name": "hasLabel",
+              "name": "labelAdded",
               "parameters": {
                 "label": "Dotnet"
               }
@@ -25,9 +25,16 @@
         ],
         "actions": [
           {
-            "name": "addReply",
+            "name": "assignToUser",
             "parameters": {
-              "comment": "What if instead of assigning, we just reply?"
+              "groupId": "",
+              "user": "astatide"
+            }
+          },
+          {
+            "name": "lockIssue",
+            "parameters": {
+              "reason": "spam"
             }
           }
         ],
