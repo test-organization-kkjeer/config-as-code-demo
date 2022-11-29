@@ -1,36 +1,46 @@
-[
-  {
-    "taskType": "trigger",
-    "capabilityId": "IssueResponder",
-    "subCapability": "IssuesOnlyResponder",
-    "version": "1.0",
-    "config": {
-      "conditions": {
-        "operator": "and",
-        "operands": [
+{
+  "version": "1.0",
+  "tasks": [
+    {
+      "taskType": "trigger",
+      "capabilityId": "IssueResponder",
+      "subCapability": "IssuesOnlyResponder",
+      "version": "1.0",
+      "config": {
+        "conditions": {
+          "operator": "and",
+          "operands": [
+            {
+              "name": "labelAdded",
+              "parameters": {
+                "label": "Dotnet"
+              }
+            }
+          ]
+        },
+        "eventType": "issue",
+        "eventNames": [
+          "issues",
+          "project_card"
+        ],
+        "actions": [
           {
-            "name": "labelAdded",
+            "name": "assignToUser",
             "parameters": {
-              "label": "Dotnet"
+              "groupId": "",
+              "user": "astatide"
+            }
+          },
+          {
+            "name": "lockIssue",
+            "parameters": {
+              "reason": "spam"
             }
           }
-        ]
-      },
-      "eventType": "issue",
-      "eventNames": [
-        "issues",
-        "project_card"
-      ],
-      "actions": [
-        {
-          "name": "assignToUser",
-          "parameters": {
-            "groupId": "",
-            "user": "astatide"
-          }
-        }
-      ],
-      "taskName": "Assign to .NET experts"
+        ],
+        "taskName": "Assign to .NET experts"
+      }
     }
-  }
-]
+  ],
+  "userGroups": []
+}
