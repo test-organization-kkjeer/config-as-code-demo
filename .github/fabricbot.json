@@ -13,7 +13,7 @@
             {
               "name": "labelAdded",
               "parameters": {
-                "label": ""
+                "label": "Demo"
               }
             }
           ]
