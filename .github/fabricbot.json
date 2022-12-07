@@ -13,7 +13,7 @@
             {
               "name": "labelAdded",
               "parameters": {
-                "label": "Dotnet"
+                "label": ""
               }
             }
           ]
@@ -25,20 +25,13 @@
         ],
         "actions": [
           {
-            "name": "assignToUser",
+            "name": "addReply",
             "parameters": {
-              "groupId": "",
-              "user": "astatide"
-            }
-          },
-          {
-            "name": "lockIssue",
-            "parameters": {
-              "reason": "spam"
+              "comment": "I'm the main config!  It's all me!"
             }
           }
         ],
-        "taskName": "Assign to .NET experts"
+        "taskName": "Respond when Demo label added"
       }
     }
   ],
