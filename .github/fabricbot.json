@@ -13,7 +13,7 @@
             {
               "name": "labelAdded",
               "parameters": {
-                "label": "Dotnet"
+                "label": "DemoLock"
               }
             }
           ]
@@ -38,7 +38,7 @@
             }
           }
         ],
-        "taskName": "Assign to .NET experts"
+        "taskName": "Assign to Audrey, and lock This Issue as Spam!"
       }
     }
   ],
